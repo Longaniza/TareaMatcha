@@ -23,6 +23,11 @@ main {
     top: 200px;
     
 }
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 main > * {
     padding-left:5%;
     padding-right: 5%;
@@ -114,6 +119,7 @@ button {
 }
 a > img {
     width: 100%;
+    height: 100%;
 }
 
 .video-section {
@@ -249,7 +255,14 @@ a > img {
 #prueba {
     width: 50%;
 }
-
+.icons {
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+#matchaFinalLogo {
+    height: 70px; width: 700px;
+}
 
 
 @media (max-width: 970px){
@@ -307,6 +320,19 @@ a > img {
         "c2-item2" 
         "c2-item1" ;
     }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .icons {
+        display: flex;
+        flex-direction: column;
+       
+    }
+    #matchaFinalLogo {
+        height: 70px; width: 280px;
+    }
+   
     
     
 
