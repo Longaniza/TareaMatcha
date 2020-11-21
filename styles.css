@@ -1,45 +1,46 @@
-/* Reseteo de modelo de cajas */
-
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    
     
 }
-h1 {
-    font-size: 3.7rem;
-    color:#025157;
+
+nav > div > ul > li > a {
+   
+    text-align: center;
+    font-size: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
-table, th, td {
-    border: 1px solid rgba(139,139,139,.8);
-    border-collapse: collapse;
-    padding: 25px;
-    
-  }
+
+a {
+    font-family: 'IBM Plex Sans',Arial,sans-serif;
+    font-size: 1em !important;
+    color:  #025157 !important;
+}
+
 main {
     position: absolute;
     top: 200px;
     
-}
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 main > * {
     padding-left:5%;
     padding-right: 5%;
     margin-bottom: 200px;
 }
-
+#img-logo {
+    width: 100%;
+}
+.navbar-brand {
+    width: 15%;
+    
+}
 #freetrial-button {
     color:white;
     background-color: #025157;
     padding:12px 14px;
     border-radius: 5px;
     border: none;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 #freetrial-button:hover {
     background-color: #67b54b;
@@ -49,176 +50,25 @@ main > * {
     text-decoration: none;
 }
 
-header {
-    height: 100px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+a {
+    text-decoration: none !important;
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+}
+h1 {
+    font-size: 3.7rem;
+    color:#025157;
 }
 
-.container {
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 70px;
-    position: fixed;
-    left: 60px;
-    margin-bottom: 10px;
-    
-}
-
-.container a:hover:not(#logo) {
-   border-bottom: solid #025157 2px;
-}
-
-nav {
-    width: 70%;
-    text-align: center;
-
-}
-
-nav > ul > li {
-    display: inline-block;
-    text-align: center;
-    font-size: 20px;
-    margin-left: 25px;
-    margin-right: 25px;
-    font-family: 'IBM Plex Sans',Arial,sans-serif;
-    font-size: 1em;
-    color:  #025157;;
-}
-
-nav > ul > li > a {
-    text-decoration: none;
-    color:  #025157;
-}
-
-.actions {
-    width: 15%;
-}
-
-.actions > * {
-    padding: 10px;
-}
-
-
-#logo {
-    width: 15%;
-}
-
-button {
-    font-family: "sans serif";
-    color: white;
-    background-color: green;
-    border-radius: 12px;
-    padding: 10px;
-}
-
-.actions > a {
-    color: green;
-}
-a > img {
-    width: 100%;
-    height: 100%;
-}
-
-.video-section {
-    display: flex;
-    flex-direction: column;   
-}
-
-#video-section-general-div > * {
-    width: 50%;
-}
-
-#video-section-shopify {
-    display: flex;
-}
-#video-section-shopify img {
-    width: 30%;
-}
-
-#video-section-main-div > * {
-    margin-top: 40px;
-}
-#video-section-general-div {
-    display: flex;
-
-}
-
-.p1rem {
-    font-size: 1.2rem;
-    line-height: 1.7rem;
-    color: #46484c;
-    font-family: 'IBM Plex Sans',Arial,sans-serif;
-}
-
-.lightgrayp {
-    color: rgba(139,139,139,.8);
-}
-#video-section-brands{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 40px;
-}
-#video-section-brands > img{
-    max-width: 100%;
-}
-#top-features-list{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-}
-#top-features-list > div{
-    width: 31%;
-}
-#top-features-list > div > img {
-    width: 100%;
-}
-#top-features-list > div > * {
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.reader-item1{grid-area: r-item1;}
-.reader-item2{grid-area: r-item2;}
-.reader-item3{grid-area: r-item3;}
-.reader-item4{grid-area: r-item4;}
-.grid-container {
-    display: grid;
-    grid-template-areas:
-    "r-item1 r-item2 r-item3 r-item4" ;
-    gap: 40px;
-    text-align: center;
-}
-.grid-container > div {
+table, th, td {
     border: 1px solid rgba(139,139,139,.8);
-    padding: 20px;
-    margin-top: 40px;
-}
-.grid-container > div > * {
-    margin-bottom: 35px;
-}
+    border-collapse: collapse;
+    padding: 25px;
+    
+  }
 
-.container2-item1{grid-area: c2-item1;}
-.container2-item2{grid-area: c2-item2;}
-
-.grid-container2 {
-    display: grid;
-    grid-template-areas:
-    "c2-item1 c2-item2 c2-item2 c2-item2" ;
-    gap: 40px;
-    text-align: center;
-}
-.container2-item2 > * {
-    text-align: left;
-    margin-bottom: 20px;
-}
-.container2-item1 > * {
-    text-align: left;
-    margin-bottom: 20px;
-}
-.small-table {
+  .big-table {
     display: none;
     
 }
@@ -226,160 +76,60 @@ a > img {
     text-align: center;
 }
 
-.lb-item1{grid-area: l-item1;}
-.lb-item2{grid-area: l-item2;}
-.lb-item3{grid-area: l-item3;}
-.lb-item4{grid-area: l-item4;}
-.grid-container3 {
-    display: grid;
-    grid-template-areas:
-    "l-item1 l-item1 l-item1 l-item2 l-item3 l-item4" ;
-    gap: 40px;
-    text-align: center;
-}
-
-.lb-item1 > * {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.lb-item4 > * {
-    margin-bottom: 20px;
-}
-.lb-item3 > * {
-    margin-bottom: 20px;
-}
-.lb-item2 > * {
-    margin-bottom: 20px;
-}
-#prueba {
-    width: 50%;
-}
-.icons {
-    display: flex;
-    align-items: center;
-    width: 40%;
-}
-#matchaFinalLogo {
-    height: 70px; width: 700px;
-}
-
-
-@media (max-width: 970px){
-    #video-section {
-        display: flex;
-        flex-direction: column;
-        
-    }
-    #video-section-general-div {
-        display: flex;
-        flex-direction: column;
-    }
-    #video-section-general-div > * {
-        width: 100%;
-    }
-    #video-section-main-div {
-        display: flex;
-        flex-direction: column;
-    }
-    #video-section-shopify {
-        display: flex;
-        flex-direction: column;
-    }
-    #video-section-shopify > img {
-        width: 50%;
-        align-self: center;
-        margin-top: 35px;
-    }
-    #video-section-brands {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    #video-section-brands > img {
-        width: 50%;
-        height: 75px;
-    }
-    .container{
-        display: none;
-    }
-    #top-features-list{
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px;
-    }
-    #top-features-list > div{
-        width: 100%;
-    }
-    .grid-container {
-        grid-template-areas:
-        "r-item1 r-item2" 
-        "r-item3 r-item4";
-    }
-    .grid-container2 {
-        grid-template-areas:
-        "c2-item2" 
-        "c2-item1" ;
-    }
-    footer {
-        flex-direction: column;
-        align-items: center;
-    }
-    .icons {
-        display: flex;
-        flex-direction: column;
-       
-    }
-    #matchaFinalLogo {
-        height: 70px; width: 280px;
-    }
-   
+.card  img {
+    transition: all .3s ease-in-out;
+  }
+  .card  img:hover {
+    transform: scale(1.03) rotate(.3deg);
     
-    
+  } 
+  
+  .card a:hover {
+      color: #67B54B;
+  }
+  .card {
+    overflow: hidden;
 
+  }
+  .p1rem {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    color: #46484c;
+    font-family: 'IBM Plex Sans',Arial,sans-serif;
 }
-@media (max-width: 700px){
-    .grid-container {
-        grid-template-areas:
-        "r-item1"
-        "r-item2"
-        "r-item3"
-        "r-item4" ;
+
+  #tools img {
+    max-width: 38px;
+  }
+  .lightgrayp {
+    color: rgba(139,139,139,.8);
+}
+  #flex-shop > button {
+    margin-bottom: 20px;
+}
+#copyright {
+    margin:0 auto;
+}
+
+
+@media (min-width: 992px){
+    #flex-shop > button {
+        margin-right: 3%;
+        margin-bottom: auto;
     }
     .small-table {
-        display:table;
+        display:none;
     }
     .big-table {
-        display: none;
+        display: table;
+    }
+    #copyright {
+        margin-right: inherit;
+        margin-left: auto;
+        align-self: center;
     }
 }
 
-
-@media (max-width: 750px){
-    .grid-container3 {
-        grid-template-areas:
-        "l-item1 l-item1 l-item1" 
-        "l-item2 l-item3 l-item4";
-    }
-    .lb-item1 >  * {
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    #prueba {
-        text-align: center;
-        width: 100%;
-    }
+@media (max-width: 350px){
     
 }
-
-@media (max-width: 450px){
-    .grid-container3 {
-        grid-template-areas:
-        "l-item1" 
-        "l-item2"
-        "l-item3" 
-        "l-item4";
-    }
-    
-}
-
-
